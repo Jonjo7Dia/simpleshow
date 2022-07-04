@@ -52,8 +52,8 @@ img {
 
 #Layer_1 {
 	position: absolute;
-	max-height: 100%;
-	max-width: 100%;
+	max-height: 80%;
+	max-width: 80%;
 }
 .intro-image {
 	display: flex;
@@ -90,7 +90,14 @@ img {
 	display: none;
 
 }
-
+svg {
+	max-height: 100%;
+	max-width: 100%;
+}
+#restart-button:hover{
+	cursor:pointer;
+	fill: #fa9600;;
+}
 .machine-builder {
 	.st0 {
 		fill: #fefefe;
@@ -1436,6 +1443,102 @@ img {
 	.st14 {
 		fill: none;
 	}
+}
+.ending{
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#010000;}
+	.st2{fill:#FEFEFE;}
+	.st3{fill:#010101;}
+	.st4{fill:#030303;}
+	.st5{fill:#060606;}
+	.st6{fill:#020202;}
+	.st7{fill:#CDCDCD;}
+	.st8{fill:#FF9900;}
+	.st9{fill:#CECECE;}
+	.st10{fill:#FDFDFD;}
+	.st11{fill:#FE9800;}
+	.st12{fill:#CCCCCC;}
+	.st13{fill:#CBCBCB;}
+	.st14{fill:#FEFDFC;}
+	.st15{fill:#FE9801;}
+	.st16{fill:#FCFCFC;}
+	.st17{fill:#FC9803;}
+	.st18{fill:#FDFCFB;}
+	.st19{fill:#FD9800;}
+	.st20{fill:#F6F6F6;}
+	.st21{fill:#F9F9F9;}
+	.st22{fill:#F7F7F7;}
+	.st23{fill:#F8F8F8;}
+	.st24{fill:#F0F0F0;}
+	.st25{fill:#C8C8C8;}
+	.st26{fill:#FBFBF9;}
+	.st27{fill:#F6F5F3;}
+	.st28{fill:#FBFBFB;}
+	.st29{fill:#F5F5F5;}
+	.st30{fill:#C3C3C3;}
+	.st31{fill:#EFEFEF;}
+	.st32{fill:#F4F4F4;}
+	.st33{fill:#F7F4F0;}
+	.st34{fill:#EBEBEB;}
+	.st35{fill:#C9C9C9;}
+	.st36{fill:#F9F6F1;}
+	.st37{fill:#F6F3EE;}
+	.st38{fill:#FAF8F5;}
+	.st39{fill:#F1F1F1;}
+	.st40{fill:#F7F4EF;}
+	.st41{fill:#F3F1EE;}
+	.st42{fill:#E5E5E5;}
+	.st43{fill:#F19100;}
+	.st44{fill:#E6E6E6;}
+	.st45{fill:#E1E1E1;}
+	.st46{fill:#EEEEEE;}
+	.st47{fill:#E0E0E0;}
+	.st48{fill:#16130E;}
+	.st49{fill:#F2EDE6;}
+	.st50{fill:#F8F5F1;}
+	.st51{fill:#D9D9D9;}
+	.st52{fill:#E7E7E7;}
+	.st53{fill:#ECECEC;}
+	.st54{fill:#EDE9E3;}
+	.st55{fill:#F3EDE3;}
+	.st56{fill:#DEDEDE;}
+	.st57{fill:#9E9E9E;}
+	.st58{fill:#D9BF98;}
+	.st59{fill:#747474;}
+	.st60{fill:#B5B5B5;}
+	.st61{fill:#DFCDB2;}
+	.st62{fill:#5F5F5F;}
+	.st63{fill:#191919;}
+	.st64{fill:#040404;}
+	.st65{fill:#121212;}
+	.st66{fill:#D1D1D1;}
+	.st67{fill:#070707;}
+	.st68{fill:#0C0C0C;}
+	.st69{fill:#0A0A0A;}
+	.st70{fill:#0D0D0D;}
+	.st71{fill:#0F0F0F;}
+	.st72{fill:#080808;}
+	.st73{fill:#050505;}
+	.st74{fill:#110C06;}
+	.st75{fill:#F5EDE2;}
+	.st76{fill:#131313;}
+	.st77{fill:#373737;}
+	.st78{fill:#1B1B1B;}
+	.st79{fill:#141414;}
+	.st80{fill:#1A1A1A;}
+	.st81{fill:#090500;}
+	.st82{fill:#FC9700;}
+	.st83{fill:#FB9600;}
+	.st84{fill:#F69400;}
+	.st85{fill:#DCDCDC;}
+	.st86{fill:#FAFAFA;}
+	.st87{fill:#F3F3F3;}
+	.st88{fill:none;}
+	.st89{fill:#020201;}
+	.st90{fill:#090909;}
+	.st91{fill:#FEFEFD;}
+	.st92{fill:#070400;}
+	.st93{fill:#080500;}
 }
 
 

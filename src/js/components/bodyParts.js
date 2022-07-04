@@ -1,3 +1,5 @@
+var centerRatio = 1.75** Number((1680)/(document.documentElement.clientWidth)); // ensure that draggin object follows cursor
+
 import ending from './ending';
 import drillNoise from '../../assets/sounds/drill-noise.mp3';
 
@@ -9,14 +11,17 @@ audio.volume = 0.2;
 
 //function to move selected body part. element = selected body part, x = x coordinate, y = y coordinate
 function moveAt(x, y, element) {
-	var xCoordinate = x + 'px';
-	var yCoordinate = y + 'px';
+
+	var xCoordinate = centerRatio*x + 'px';
+	var yCoordinate = centerRatio*y + 'px';
 	element.css('transform', `translate(${xCoordinate}, ${yCoordinate})`);
 }
 
 //function to check whether the body part is where it is supposed to be. x = x coordinate of the dragged body part, y = y coordinate, 
 //correctX = correct x coordinate found in the object, correctY = correct y coordinate
 function inRange(x, y, correctX, correctY) {
+	console.log(x);
+	console.log(correctX);
 	let locationX = correctX - 5 < x && correctX + 5 > x;
 	let locationY = correctY - 5 < y && correctY + 5 > y;
 	return locationY && locationX;
@@ -38,6 +43,8 @@ function getCoordinates(element) {
 
 function bodyParts() {
 	//object that stores where the correct positions of each body part, and the total amount of correctly placed body parts
+	console.log(screen.width);
+	console.log(centerRatio);
 	const correctCoordinates = {
 		'#simplemech_xA0_leg1': {
 			x: -455,
@@ -73,20 +80,19 @@ function bodyParts() {
 	};
 	$(document).ready(function () {
 		var id;
-		$('.body_part').on('mousedown', function (event) {
+		$('.body_part').on('pointerdown ', function (event) {
 			id = '#' + $(this).attr('id');
-			var correctPosition = false;
 			if (!correctCoordinates[id].connected) { //check if the body part is in the correct position only allow draggability if it is not.
 				const startingX = event.pageX - getCoordinates(id).x; //get relative x and y coordinates based on the object location
 				const startingY = event.pageY - getCoordinates(id).y;
-				$(document).on('mousemove', function (event) {
+				$(document).on('pointermove', function (event) {
 					moveAt(event.pageX - startingX, event.pageY - startingY, $(id));
 				});
-				$(document).on('mouseup', function (event) {
+				$(document).on('pointerup', function (event) {
 					$(document).off(); //stop the following the cursor on mouse up
-					correctPosition = inRange(
-						event.pageX - startingX,
-						event.pageY - startingY,
+					var correctPosition = inRange(
+						(event.pageX - startingX) * centerRatio,
+						(event.pageY - startingY) * centerRatio,
 						correctCoordinates[id].x,
 						correctCoordinates[id].y
 					);
@@ -94,6 +100,10 @@ function bodyParts() {
 						correctCoordinates[id].connected = true;
 						correctCoordinates.totalConnected++;
 						correctCoordinates.totalConnected === 6 ? ending() : audio.play();
+					}
+					else {
+						console.log('hello');
+						moveAt(0, 0, $(id)) //move body part back if incorrect
 					}
 				});
 			}
