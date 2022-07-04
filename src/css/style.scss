@@ -1,0 +1,1451 @@
+/**
+ * EXAMPLE CONTENT
+ * Feel free to remove it.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+body {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	user-select: none;
+	overflow: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#start_x5F_button_xA0_Image:hover {
+	cursor: pointer;
+}
+
+.body_part .st6:first-of-type, #simplemech-torso .st6:first-of-type{
+	display: none; //takes away the white edge
+} 
+
+
+#Layer_1 {
+	position: absolute;
+	max-height: 100%;
+	max-width: 100%;
+}
+.intro-image {
+	display: flex;
+	position: absolute;
+	z-index: 3;
+	height: 100%;
+	width: 100%;
+}
+
+.machine-builder {
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+.body_part {
+	transform: translate(0px, 0px);
+}
+.body_part:hover {
+	cursor: pointer;
+}
+
+.start-image-background {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.instructions-box {
+	animation: createBox 0.6s ease-in;
+}
+.ending {
+	position: absolute;
+	background-color: #0000009e;
+	z-index: 10;
+	display: none;
+
+}
+
+.machine-builder {
+	.st0 {
+		fill: #fefefe;
+	}
+	.st1 {
+		fill: #010101;
+	}
+	.st2 {
+		fill: #020202;
+	}
+	.st3 {
+		fill: #040404;
+	}
+	.st4 {
+		fill: #050505;
+	}
+	.st5 {
+		fill: #5e5e5e;
+	}
+	.st6 {
+		fill: #ffffff;
+	}
+	.st7 {
+		fill: #cdcdcd;
+	}
+	.st8 {
+		fill: #cfcfcf;
+	}
+	.st9 {
+		fill: #ff9900;
+	}
+	.st10 {
+		fill: #cccccc;
+	}
+	.st11 {
+		fill: #cecece;
+	}
+	.st12 {
+		fill: #f7f7f7;
+	}
+	.st13 {
+		fill: #fcfcfc;
+	}
+	.st14 {
+		fill: #f9f9f9;
+	}
+	.st15 {
+		fill: #cbcbcb;
+	}
+	.st16 {
+		fill: #f39200;
+	}
+	.st17 {
+		fill: #f8f8f8;
+	}
+	.st18 {
+		fill: #fdfdfd;
+	}
+	.st19 {
+		fill: #f0f0f0;
+	}
+	.st20 {
+		fill: #fbfbfb;
+	}
+	.st21 {
+		fill: #fafafa;
+	}
+	.st22 {
+		fill: #f69300;
+	}
+	.st23 {
+		fill: #fefefd;
+	}
+	.st24 {
+		fill: #c7c7c7;
+	}
+	.st25 {
+		fill: #fe9800;
+	}
+	.st26 {
+		fill: #cacaca;
+	}
+	.st27 {
+		fill: #f2f2f2;
+	}
+	.st28 {
+		fill: #eeeeee;
+	}
+	.st29 {
+		fill: #f89500;
+	}
+	.st30 {
+		fill: #fc9700;
+	}
+	.st31 {
+		fill: #f19100;
+	}
+	.st32 {
+		fill: #f79400;
+	}
+	.st33 {
+		fill: #f3f3f3;
+	}
+	.st34 {
+		fill: #f49300;
+	}
+	.st35 {
+		fill: #fa9600;
+	}
+	.st36 {
+		fill: #f1f1f1;
+	}
+	.st37 {
+		fill: #dfdfdf;
+	}
+	.st38 {
+		fill: #e1e1e1;
+	}
+	.st39 {
+		fill: #ececec;
+	}
+	.st40 {
+		fill: #e9e9e9;
+	}
+	.st41 {
+		fill: #eaeaea;
+	}
+	.st42 {
+		fill: #ededed;
+	}
+	.st43 {
+		fill: #d8d8d8;
+	}
+	.st44 {
+		fill: #e0e0e0;
+	}
+	.st45 {
+		fill: #dddddd;
+	}
+	.st46 {
+		fill: #e4e4e4;
+	}
+	.st47 {
+		fill: #aeaeae;
+	}
+	.st48 {
+		fill: #d0d0d0;
+	}
+	.st49 {
+		fill: #555555;
+	}
+	.st50 {
+		fill: #d3d3d3;
+	}
+	.st51 {
+		fill: #030303;
+	}
+	.st52 {
+		fill: #020101;
+	}
+	.st53 {
+		fill: #020201;
+	}
+	.st54 {
+		fill: #030202;
+	}
+	.st55 {
+		fill: #080808;
+	}
+	.st56 {
+		fill: #0c0c0c;
+	}
+	.st57 {
+		fill: #040302;
+	}
+	.st58 {
+		fill: #0b0b0b;
+	}
+	.st59 {
+		fill: #090909;
+	}
+	.st60 {
+		fill: #0d0d0d;
+	}
+	.st61 {
+		fill: #0a0a0a;
+	}
+	.st62 {
+		fill: #040402;
+	}
+	.st63 {
+		fill: #fffefc;
+	}
+	.st64 {
+		fill: #050300;
+	}
+	.st65 {
+		fill: #fffdfa;
+	}
+	.st66 {
+		fill: #2e1b00;
+	}
+	.st67 {
+		fill: #050504;
+	}
+	.st68 {
+		fill: #d1d1d1;
+	}
+	.st69 {
+		fill: #d2d2d2;
+	}
+	.st70 {
+		fill: #fffdfb;
+	}
+	.st71 {
+		fill: #fffaf4;
+	}
+	.st72 {
+		fill: #f5f5f5;
+	}
+	.st73 {
+		fill: #c9c9c9;
+	}
+	.st74 {
+		fill: #f4f4f4;
+	}
+	.st75 {
+		fill: #969696;
+	}
+	.st76 {
+		fill: #fefdfc;
+	}
+	.st77 {
+		fill: #c5c5c5;
+	}
+	.st78 {
+		fill: #e88c03;
+	}
+	.st79 {
+		fill: #5f5f5f;
+	}
+	.st80 {
+		fill: #e6e6e6;
+	}
+	.st81 {
+		fill: #efefef;
+	}
+	.st82 {
+		fill: #e7e7e7;
+	}
+	.st83 {
+		fill: #ff9901;
+	}
+	.st84 {
+		fill: #c8c8c8;
+	}
+	.st85 {
+		fill: #c4c4c4;
+	}
+	.st86 {
+		fill: #f6f6f6;
+	}
+	.st87 {
+		fill: #bababa;
+	}
+	.st88 {
+		fill: #f29100;
+	}
+	.st89 {
+		fill: #d7d7d7;
+	}
+	.st90 {
+		fill: #b7b7b7;
+	}
+	.st91 {
+		fill: #656565;
+	}
+	.st92 {
+		fill: #646464;
+	}
+	.st93 {
+		fill: #8c8c8c;
+	}
+	.st94 {
+		fill: #fc9801;
+	}
+	.st95 {
+		fill: #f79603;
+	}
+	.st96 {
+		fill: #f89602;
+	}
+	.st97 {
+		fill: #f99602;
+	}
+	.st98 {
+		fill: #c6c6c6;
+	}
+	.st99 {
+		fill: #fb9702;
+	}
+	.st100 {
+		fill: #c3c3c3;
+	}
+	.st101 {
+		fill: #fb9700;
+	}
+	.st102 {
+		fill: #040403;
+	}
+	.st103 {
+		fill: #080501;
+	}
+	.st104 {
+		fill: #0b0802;
+	}
+	.st105 {
+		fill: #fffbf6;
+	}
+	.st106 {
+		fill: #d5d5d5;
+	}
+	.st107 {
+		fill: #050403;
+	}
+	.st108 {
+		fill: #0b0703;
+	}
+	.st109 {
+		fill: #090602;
+	}
+	.st110 {
+		fill: #d4d4d4;
+	}
+	.st111 {
+		fill: #101010;
+	}
+	.st112 {
+		fill: #060606;
+	}
+	.st113 {
+		fill: #070707;
+	}
+	.st114 {
+		fill: #0e0e0e;
+	}
+	.st115 {
+		fill: #d6d6d6;
+	}
+	.st116 {
+		fill: #dbdbdb;
+	}
+	.st117 {
+		fill: #ebebeb;
+	}
+	.st118 {
+		fill: #a5a5a5;
+	}
+	.st119 {
+		fill: #7f7f7f;
+	}
+	.st120 {
+		fill: #f99500;
+	}
+	.st121 {
+		fill: #dadada;
+	}
+	.st122 {
+		fill: #fe9900;
+	}
+	.st123 {
+		fill: #fdfefe;
+	}
+	.st124 {
+		fill: #f3fcfc;
+	}
+	.st125 {
+		fill: #fafbfb;
+	}
+	.st126 {
+		fill: #fcfdfd;
+	}
+	.st127 {
+		fill: #fe9901;
+	}
+	.st128 {
+		fill: #fcfefe;
+	}
+	.st129 {
+		fill: #edf5f5;
+	}
+	.st130 {
+		fill: #c4c9c9;
+	}
+	.st131 {
+		fill: #c3c9c9;
+	}
+	.st132 {
+		fill: #e6f0f0;
+	}
+	.st133 {
+		fill: #f5f6f6;
+	}
+	.st134 {
+		fill: #f9f8f6;
+	}
+	.st135 {
+		fill: #f7f8f8;
+	}
+	.st136 {
+		fill: #f5f7f7;
+	}
+	.st137 {
+		fill: #f7fbfb;
+	}
+	.st138 {
+		fill: #f0f3f3;
+	}
+	.st139 {
+		fill: #f6f6ef;
+	}
+	.st140 {
+		fill: #f0f1f1;
+	}
+	.st141 {
+		fill: #f2f4f4;
+	}
+	.st142 {
+		fill: #f3f5f5;
+	}
+	.st143 {
+		fill: #f0f4f4;
+	}
+	.st144 {
+		fill: #faf9f9;
+	}
+	.st145 {
+		fill: #faf8f8;
+	}
+	.st146 {
+		fill: #a5a4a4;
+	}
+	.st147 {
+		fill: #b3b9b9;
+	}
+	.st148 {
+		fill: #eae9e9;
+	}
+	.st149 {
+		fill: #afb5b5;
+	}
+	.st150 {
+		fill: #a0a1a1;
+	}
+	.st151 {
+		fill: #060401;
+	}
+	.st152 {
+		fill: #fdf9f5;
+	}
+	.st153 {
+		fill: #120a00;
+	}
+	.st154 {
+		fill: #281700;
+	}
+	.st155 {
+		fill: #2f2d2d;
+	}
+	.st156 {
+		fill: #251e1e;
+	}
+	.st157 {
+		fill: #1e1a1a;
+	}
+	.st158 {
+		fill: #2a2828;
+	}
+	.st159 {
+		fill: #231c1c;
+	}
+	.st160 {
+		fill: #181313;
+	}
+	.st161 {
+		fill: #1c1919;
+	}
+	.st162 {
+		fill: #f4f7f7;
+	}
+	.st163 {
+		fill: #312a2a;
+	}
+	.st164 {
+		fill: #f4f5f5;
+	}
+	.st165 {
+		fill: #e7ecec;
+	}
+	.st166 {
+		fill: #ebecec;
+	}
+	.st167 {
+		fill: #f8f9f9;
+	}
+	.st168 {
+		fill: #dee1e1;
+	}
+	.st169 {
+		fill: #ebf0f0;
+	}
+	.st170 {
+		fill: #e3e9e9;
+	}
+	.st171 {
+		fill: #dce4e4;
+	}
+	.st172 {
+		fill: #373030;
+	}
+	.st173 {
+		fill: #474747;
+	}
+	.st174 {
+		fill: #d2d4d4;
+	}
+	.st175 {
+		fill: #312b2b;
+	}
+	.st176 {
+		fill: #3d3131;
+	}
+	.st177 {
+		fill: #b2b8b8;
+	}
+	.st178 {
+		fill: #f9fefe;
+	}
+	.st179 {
+		fill: #b5bbbb;
+	}
+	.st180 {
+		fill: #afb2b2;
+	}
+	.st181 {
+		fill: #4f5959;
+	}
+	.st182 {
+		fill: #7c8787;
+	}
+	.st183 {
+		fill: #889191;
+	}
+	.st184 {
+		fill: #110f0f;
+	}
+	.st185 {
+		fill: #100d0d;
+	}
+	.st186 {
+		fill: #101111;
+	}
+	.st187 {
+		fill: #1c1818;
+	}
+	.st188 {
+		fill: #1c1713;
+	}
+	.st189 {
+		fill: #231a10;
+	}
+	.st190 {
+		fill: #150d00;
+	}
+	.st191 {
+		fill: #edf4f4;
+	}
+	.st192 {
+		fill: #e3ebeb;
+	}
+	.st193 {
+		fill: #d98300;
+	}
+	.st194 {
+		fill: #f19200;
+	}
+	.st195 {
+		fill: #fd9801;
+	}
+	.st196 {
+		fill: #fbfcfc;
+	}
+	.st197 {
+		fill: #f9fcfa;
+	}
+	.st198 {
+		fill: #f8fafa;
+	}
+	.st199 {
+		fill: #cbc9c9;
+	}
+	.st200 {
+		fill: #b5b7b7;
+	}
+	.st201 {
+		fill: #f3f4f4;
+	}
+	.st202 {
+		fill: #fa9705;
+	}
+	.st203 {
+		fill: #f6fafa;
+	}
+	.st204 {
+		fill: #f7f6f2;
+	}
+	.st205 {
+		fill: #e48e0b;
+	}
+	.st206 {
+		fill: #e58e0a;
+	}
+	.st207 {
+		fill: #f9fcfc;
+	}
+	.st208 {
+		fill: #e89013;
+	}
+	.st209 {
+		fill: #edefef;
+	}
+	.st210 {
+		fill: #f2ede4;
+	}
+	.st211 {
+		fill: #f5f9f9;
+	}
+	.st212 {
+		fill: #f0f1ee;
+	}
+	.st213 {
+		fill: #f99702;
+	}
+	.st214 {
+		fill: #f39708;
+	}
+	.st215 {
+		fill: #d5870f;
+	}
+	.st216 {
+		fill: #f2efe9;
+	}
+	.st217 {
+		fill: #f2ece0;
+	}
+	.st218 {
+		fill: #f2ece1;
+	}
+	.st219 {
+		fill: #a9a7a7;
+	}
+	.st220 {
+		fill: #0a0909;
+	}
+	.st221 {
+		fill: #1b1b1b;
+	}
+	.st222 {
+		fill: #0b0a08;
+	}
+	.st223 {
+		fill: #090603;
+	}
+	.st224 {
+		fill: #f0f7f2;
+	}
+	.st225 {
+		fill: #f9fbfb;
+	}
+	.st226 {
+		fill: #fafcfc;
+	}
+	.st227 {
+		fill: #e4e6e6;
+	}
+	.st228 {
+		fill: #fffefe;
+	}
+	.st229 {
+		fill: #140b0b;
+	}
+	.st230 {
+		fill: #1b1919;
+	}
+	.st231 {
+		fill: #fe9801;
+	}
+	.st232 {
+		fill: #cbcccc;
+	}
+	.st233 {
+		fill: #fcfdfc;
+	}
+	.st234 {
+		fill: #f7f9f9;
+	}
+	.st235 {
+		fill: #b7baba;
+	}
+	.st236 {
+		fill: #f2f3f3;
+	}
+	.st237 {
+		fill: #fb9806;
+	}
+	.st238 {
+		fill: #f6f9f9;
+	}
+	.st239 {
+		fill: #f8f8f6;
+	}
+	.st240 {
+		fill: #dd8c0d;
+	}
+	.st241 {
+		fill: #ec910a;
+	}
+	.st242 {
+		fill: #ec951b;
+	}
+	.st243 {
+		fill: #ebeded;
+	}
+	.st244 {
+		fill: #fffbf5;
+	}
+	.st245 {
+		fill: #e2e6e5;
+	}
+	.st246 {
+		fill: #f49606;
+	}
+	.st247 {
+		fill: #f79909;
+	}
+	.st248 {
+		fill: #df8c0e;
+	}
+	.st249 {
+		fill: #e5e2e0;
+	}
+	.st250 {
+		fill: #ece9e1;
+	}
+	.st251 {
+		fill: #edebe6;
+	}
+	.st252 {
+		fill: #1d1717;
+	}
+	.st253 {
+		fill: #f9f9f5;
+	}
+	.st254 {
+		fill: #0c0700;
+	}
+	.st255 {
+		fill: #180f00;
+	}
+	.st256 {
+		fill: #180e0e;
+	}
+	.st257 {
+		fill: #161313;
+	}
+	.st258 {
+		fill: #fd9800;
+	}
+	.st259 {
+		fill: #fb9701;
+	}
+	.st260 {
+		fill: #f4f4f3;
+	}
+	.st261 {
+		fill: #eff0f0;
+	}
+	.st262 {
+		fill: #f5f8f8;
+	}
+	.st263 {
+		fill: #f6f8f8;
+	}
+	.st264 {
+		fill: #f4f9f9;
+	}
+	.st265 {
+		fill: #eaebeb;
+	}
+	.st266 {
+		fill: #dd8500;
+	}
+	.st267 {
+		fill: #f9fdfd;
+	}
+	.st268 {
+		fill: #eff3f3;
+	}
+	.st269 {
+		fill: #dfe7e7;
+	}
+	.st270 {
+		fill: #f2f0eb;
+	}
+	.st271 {
+		fill: #e5e7e7;
+	}
+	.st272 {
+		fill: #f59000;
+	}
+	.st273 {
+		fill: #e2e6e6;
+	}
+	.st274 {
+		fill: #dfe2e2;
+	}
+	.st275 {
+		fill: #f1f0e5;
+	}
+	.st276 {
+		fill: #f5f0e4;
+	}
+	.st277 {
+		fill: #d3d9cb;
+	}
+	.st278 {
+		fill: #b8b7b7;
+	}
+	.st279 {
+		fill: #090805;
+	}
+	.st280 {
+		fill: #231400;
+	}
+	.st281 {
+		fill: #262424;
+	}
+	.st282 {
+		fill: #0b0909;
+	}
+	.st283 {
+		fill: #201d1d;
+	}
+	.st284 {
+		fill: #151111;
+	}
+	.st285 {
+		fill: #869b9b;
+	}
+	.st286 {
+		fill: #cccdcd;
+	}
+	.st287 {
+		fill: #f9fafa;
+	}
+	.st288 {
+		fill: #f7fafa;
+	}
+	.st289 {
+		fill: #fc9902;
+	}
+	.st290 {
+		fill: #f1f4f4;
+	}
+	.st291 {
+		fill: #fcfbf9;
+	}
+	.st292 {
+		fill: #e6e7e7;
+	}
+	.st293 {
+		fill: #e3e5e5;
+	}
+	.st294 {
+		fill: #f6f5f3;
+	}
+	.st295 {
+		fill: #f59300;
+	}
+	.st296 {
+		fill: #fcf7f4;
+	}
+	.st297 {
+		fill: #f89702;
+	}
+	.st298 {
+		fill: #e8e9e9;
+	}
+	.st299 {
+		fill: #e48900;
+	}
+	.st300 {
+		fill: #e5ecec;
+	}
+	.st301 {
+		fill: #f3f0f0;
+	}
+	.st302 {
+		fill: #eaefef;
+	}
+	.st303 {
+		fill: #f5fafa;
+	}
+	.st304 {
+		fill: #f5efed;
+	}
+	.st305 {
+		fill: #eaeeee;
+	}
+	.st306 {
+		fill: #e5ebe6;
+	}
+	.st307 {
+		fill: #ed8a03;
+	}
+	.st308 {
+		fill: #e4e8e8;
+	}
+	.st309 {
+		fill: #120e00;
+	}
+	.st310 {
+		fill: #231f1f;
+	}
+	.st311 {
+		fill: #090808;
+	}
+	.st312 {
+		fill: #1f1313;
+	}
+	.st313 {
+		fill: #262121;
+	}
+	.st314 {
+		fill: #010000;
+	}
+	.st315 {
+		fill: #f0f6f2;
+	}
+	.st316 {
+		fill: #f1f6f1;
+	}
+	.st317 {
+		fill: #1a1313;
+	}
+	.st318 {
+		fill: #8c9b9b;
+	}
+	.st319 {
+		fill: #482f03;
+	}
+	.st320 {
+		fill: #a56700;
+	}
+	.st321 {
+		fill: #96620b;
+	}
+	.st322 {
+		fill: #1b1a1a;
+	}
+	.st323 {
+		fill: #231e1e;
+	}
+}
+
+.intro-image {
+	.st0 {
+		fill: #ffffff;
+	}
+	.st1 {
+		fill: #010000;
+	}
+	.st2 {
+		fill: #fefefe;
+	}
+	.st3 {
+		fill: #010101;
+	}
+	.st4 {
+		fill: #060606;
+	}
+	.st5 {
+		fill: #030303;
+	}
+	.st6 {
+		fill: #ff9900;
+	}
+	.st7 {
+		fill: #cdcdcd;
+	}
+	.st8 {
+		fill: #fe9900;
+	}
+	.st9 {
+		fill: #cccccc;
+	}
+	.st10 {
+		fill: #f7f7f7;
+	}
+	.st11 {
+		fill: #fefefd;
+	}
+	.st12 {
+		fill: #fd9800;
+	}
+	.st13 {
+		fill: #cacaca;
+	}
+	.st14 {
+		fill: #fdfdfd;
+	}
+	.st15 {
+		fill: #fcfcfc;
+	}
+	.st16 {
+		fill: #fc9700;
+	}
+	.st17 {
+		fill: #fefdfc;
+	}
+	.st18 {
+		fill: #fcfbfa;
+	}
+	.st19 {
+		fill: #fcfcfa;
+	}
+	.st20 {
+		fill: #fd9903;
+	}
+	.st21 {
+		fill: #f5f5f5;
+	}
+	.st22 {
+		fill: #cbcbcb;
+	}
+	.st23 {
+		fill: #fbfaf8;
+	}
+	.st24 {
+		fill: #f6f6f6;
+	}
+	.st25 {
+		fill: #f3f3f3;
+	}
+	.st26 {
+		fill: #fbfbfb;
+	}
+	.st27 {
+		fill: #fafafa;
+	}
+	.st28 {
+		fill: #f4f4f4;
+	}
+	.st29 {
+		fill: #fffbf6;
+	}
+	.st30 {
+		fill: #f0f0f0;
+	}
+	.st31 {
+		fill: #f2f2f2;
+	}
+	.st32 {
+		fill: #eeeeee;
+	}
+	.st33 {
+		fill: #f8f8f8;
+	}
+	.st34 {
+		fill: #e7e7e7;
+	}
+	.st35 {
+		fill: #e8e8e8;
+	}
+	.st36 {
+		fill: #f1f1f1;
+	}
+	.st37 {
+		fill: #e88b00;
+	}
+	.st38 {
+		fill: #e6e6e6;
+	}
+	.st39 {
+		fill: #e3e3e3;
+	}
+	.st40 {
+		fill: #ededed;
+	}
+	.st41 {
+		fill: #e2e2e2;
+	}
+	.st42 {
+		fill: #e5e5e5;
+	}
+	.st43 {
+		fill: #dcdcdc;
+	}
+	.st44 {
+		fill: #dedede;
+	}
+	.st45 {
+		fill: #d3d3d3;
+	}
+	.st46 {
+		fill: #e0e0e0;
+	}
+	.st47 {
+		fill: #c4c4c4;
+	}
+	.st48 {
+		fill: #b7b7b7;
+	}
+	.st49 {
+		fill: #8e8e8e;
+	}
+	.st50 {
+		fill: #8f8f8f;
+	}
+	.st51 {
+		fill: #7e7e7e;
+	}
+	.st52 {
+		fill: #8a8a8a;
+	}
+	.st53 {
+		fill: #070707;
+	}
+	.st54 {
+		fill: #040404;
+	}
+	.st55 {
+		fill: #0a0a0a;
+	}
+	.st56 {
+		fill: #0b0b0b;
+	}
+	.st57 {
+		fill: #090909;
+	}
+	.st58 {
+		fill: #0c0c0c;
+	}
+	.st59 {
+		fill: #020101;
+	}
+	.st60 {
+		fill: #020202;
+	}
+	.st61 {
+		fill: #080808;
+	}
+	.st62 {
+		fill: #111111;
+	}
+	.st63 {
+		fill: #0e0e0e;
+	}
+	.st64 {
+		fill: #050300;
+	}
+	.st65 {
+		fill: #0f0900;
+	}
+	.st66 {
+		fill: #120b00;
+	}
+	.st67 {
+		fill: #0e0800;
+	}
+	.st68 {
+		fill: #070501;
+	}
+	.st69 {
+		fill: #fffbf5;
+	}
+	.st70 {
+		fill: #0b0905;
+	}
+	.st71 {
+		fill: #0c0700;
+	}
+	.st72 {
+		fill: #080603;
+	}
+	.st73 {
+		fill: #fff9ef;
+	}
+	.st74 {
+		fill: #190f00;
+	}
+	.st75 {
+		fill: #f9f2e9;
+	}
+	.st76 {
+		fill: #0d0d0d;
+	}
+	.st77 {
+		fill: #0f0f0f;
+	}
+	.st78 {
+		fill: #171717;
+	}
+	.st79 {
+		fill: #2a2a2a;
+	}
+	.st80 {
+		fill: #3b3b3b;
+	}
+	.st81 {
+		fill: #1a1a1a;
+	}
+	.st82 {
+		fill: #151515;
+	}
+	.st83 {
+		fill: #323232;
+	}
+	.st84 {
+		fill: #444444;
+	}
+	.st85 {
+		fill: #040301;
+	}
+	.st86 {
+		fill: #030202;
+	}
+	.st87 {
+		fill: #181818;
+	}
+	.st88 {
+		fill: #101010;
+	}
+	.st89 {
+		fill: #5f5f5f;
+	}
+	.st90 {
+		fill: #f99600;
+	}
+	.st91 {
+		fill: #f79400;
+	}
+	.st92 {
+		fill: #fe9800;
+	}
+	.st93 {
+		fill: #131313;
+	}
+	.st94 {
+		fill: #050505;
+	}
+	.st95 {
+		fill: #ebebeb;
+	}
+	.st96 {
+		fill: none;
+	}
+	.st97 {
+		fill: #fcfdfd;
+	}
+	.st98 {
+		fill: #fdfefe;
+	}
+	.st99 {
+		fill: #fafcfc;
+	}
+	.st100 {
+		fill: #f3f6f6;
+	}
+	.st101 {
+		fill: #b8baba;
+	}
+	.st102 {
+		fill: #8ca7a7;
+	}
+	.st103 {
+		fill: #050404;
+	}
+	.st104 {
+		fill: #302828;
+	}
+	.st105 {
+		fill: #fefdfd;
+	}
+	.st106 {
+		fill: #080500;
+	}
+}
+
+.instructions-box {
+	.st0 {
+		fill: #ffffff;
+	}
+	.st1 {
+		fill: #ff9900;
+	}
+	.st2 {
+		fill: #f2f9f9;
+	}
+	.st3 {
+		fill: #f8f7ef;
+	}
+	.st4 {
+		fill: #0d0c0c;
+	}
+	.st5 {
+		fill: #0e0d0d;
+	}
+	.st6 {
+		fill: #0a0701;
+	}
+	.st7 {
+		fill: #0a0603;
+	}
+	.st8 {
+		fill: #120b03;
+	}
+	.st9 {
+		fill: #120d05;
+	}
+	.st10 {
+		fill: #c4bdbd;
+	}
+	.st11 {
+		fill: #dbdcdc;
+	}
+	.st12 {
+		fill: #d0dede;
+	}
+	.st13 {
+		fill: #e5efef;
+	}
+	.st14 {
+		fill: none;
+	}
+}
+
+
+@keyframes createBox {
+	from {
+		opacity: 0;
+		scale: 0;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+}
